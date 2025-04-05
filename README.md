@@ -26,7 +26,7 @@ eles também disseram para fazer a validação inteira pelo JS. Então eu realme
 
 ## Resolução do exercício
 
-- Site da resolução: 
+- Site da resolução: https://xlraullx.github.io/Formulario_com_validacao/
 
 ## Contato
 <p align="center">
