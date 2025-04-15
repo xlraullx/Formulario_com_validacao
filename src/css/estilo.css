@@ -23,7 +23,7 @@ main{
     margin-bottom: 11px;
 }
 
-.formulario {
+.formulario{
     padding: 20px;
     background-color: #FFFFFF;
     width: 340px;
@@ -32,6 +32,7 @@ main{
 
 .formulario input{
     width: 100%;
+    margin-bottom: 15px;
 }
 
 .formulario input, .formulario textarea{
@@ -54,6 +55,7 @@ main{
     width: 100%;
     resize: none;
     height: 100px;
+    margin-bottom: 6px;
 }
 
 .formulario textarea::placeholder{
@@ -66,22 +68,37 @@ main{
     translate: -5px;
 }
 
-.formulario input:last-child{
+.formulario button{
     font-weight: 700;
     font-size: 1.5rem;
+    width: 100%;
     color: #FFFFFF;
     background-color: #3CCC87;
     border: none;
     height: 40px;
-    margin-top: 11px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.formulario .campo-valido{
+    border-color: #00C22B;
+}
+
+.formulario .campo-invalido{
+    border-color: #F52E2E;
 }
 
 .formulario .campo-obrigatorio{
+    display: none;
     color: #F52E2E;
     font-size: 0.8rem;
-    margin-bottom: 15px;
 }
 
-.formulario .campo-obrigatorio:nth-last-of-type(1){
-    margin-bottom: 5px;
+.formulario input.campo-invalido,.formulario textarea.campo-invalido{
+    margin-bottom: 0px;
+}
+
+.formulario .mostrar{
+    display: block;
+    margin-bottom: 6px;
 }

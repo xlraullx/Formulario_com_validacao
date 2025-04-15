@@ -1,0 +1,82 @@
+@media (max-width: 608px) { 
+    main{
+        text-align: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+   .sobre{
+        margin: 0;
+    }
+} 
+
+@media(min-width: 1900px){
+    .sobre{
+        width: 350px;
+        font-size: 1.7rem;
+    }
+    
+    .formulario .campo-obrigatorio{
+        font-size: 1.1rem;
+    }
+
+    .formulario .mostrar{
+        margin-bottom: 6px;
+    }
+}
+
+@media(min-width: 2000px){
+    .sobre{
+        width: 300px;
+        font-size: 2.5rem;
+    }
+    
+    .sobre .titulo{
+        font-size: 3.0rem;
+    }
+
+    .formulario{
+        width: 450px;
+        padding: 25px;
+    }
+
+    .formulario input{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .formulario input, .formulario textarea{
+        border: solid 2px;
+    }
+    
+    .formulario input::placeholder, .formulario textarea::placeholder{
+        font-size: 2rem;
+    }
+    
+    .formulario input:nth-child(n+1):nth-child(-n+5){
+        height: 50px;
+    }
+    
+    .formulario textarea{
+        font-size: 2rem;
+        height: 150px;
+    }
+
+    .formulario p:nth-last-child(2){
+        font-size: 2rem;
+    }
+
+    .formulario button{
+        font-size: 2.5rem;
+        height: 60px;
+        margin-top: 20px;
+    }
+    
+    .formulario .campo-obrigatorio{
+        font-size: 1.8rem;
+    }
+
+    .formulario .mostrar{
+        margin-bottom: 10px;
+    }
+}

@@ -1,30 +1,30 @@
 const bntFormulario = document.getElementById('bnt')
 const campoDeTexto = document.querySelectorAll('[name="campoDeTexto"]')
 
-bntFormulario.addEventListener('click',() =>{
+bntFormulario.addEventListener('click',(e) =>{
     campoDeTexto.forEach((campoDeTexto) =>{
         let campoPreenchido = campoDeTexto.value
         let errorText = campoDeTexto.nextElementSibling
         
-        if(!(campoPreenchido)){
-            campoDeTexto.style.borderColor = '#F52E2E'
-            
-            addTextoDeError(errorText)
+        if(campoPreenchido){
+            campoDeTexto.classList.remove('campo-invalido')
+            campoDeTexto.classList.add('campo-valido')
+
+            errorText.classList.remove('mostrar')
         }else{
-            campoDeTexto.style.borderColor = '#00C22B'
+            campoDeTexto.classList.remove('campo-valido')
+            campoDeTexto.classList.add('campo-invalido')
 
-            removerTextoDeError(errorText)
+            errorText.classList.add('mostrar')
         }
-    })
+    }) 
+    
+    let camposvalidos = document.querySelectorAll('.campo-valido')
+
+    if(camposvalidos.length === campoDeTexto.length){
+        return
+    }else{
+        e.preventDefault()
+    }
+    
 })
-
-function addTextoDeError(campoNaoPreenchido){
-    campoNaoPreenchido.style.marginBottom = '6px'
-    campoNaoPreenchido.innerHTML = 'campo obrigatório'
-}
-
-function removerTextoDeError(campoPreenchido){
-    campoPreenchido.style.marginBottom = '15px'
-    campoPreenchido.innerHTML = ''
-    campoDeTexto[3].nextElementSibling.style.marginBottom = '5px'
-}

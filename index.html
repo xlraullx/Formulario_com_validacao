@@ -6,6 +6,7 @@
     <title>Formulário</title>
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/estilo.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
 </head>
 <body>
     <main>
@@ -15,21 +16,23 @@
         </div>
 
         <div class="formulario">
-            <input type="text" name="campoDeTexto" id="nome" placeholder="Nome completo *"> 
-            <div class="campo-obrigatorio"></div>
+            <form action="index.html" method="get">
+                <input type="text" name="campoDeTexto" id="nome" placeholder="Nome completo *"> 
+                <div class="campo-obrigatorio">campo obrigatório</div>
 
-            <input type="text" name="campoDeTexto" id="email" placeholder="Email *">
-            <div class="campo-obrigatorio"></div>
+                <input type="text" name="campoDeTexto" id="email" placeholder="Email *">
+                <div class="campo-obrigatorio">campo obrigatório</div>
 
-            <input type="text" name="campoDeTexto" id="telefone" placeholder="Telefone *">
-            <div class="campo-obrigatorio"></div>
+                <input type="text" name="campoDeTexto" id="telefone" placeholder="Telefone *">
+                <div class="campo-obrigatorio">campo obrigatório</div>
 
-            <textarea name="campoDeTexto" id="duvida" placeholder="Mensagem *"></textarea>
-            <div class="campo-obrigatorio"></div>
+                <textarea name="campoDeTexto" id="duvida" placeholder="Mensagem *"></textarea>
+                <div class="campo-obrigatorio">campo obrigatório</div>
 
-            <p>*campos obrigatórios</p>
+                <p>*campos obrigatórios</p>
 
-            <input id="bnt" type="submit" value="Enviar">
+                <button id="bnt" type="submit">Enviar</button>
+            </form>
         </div>
     </main>
 
