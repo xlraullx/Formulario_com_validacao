@@ -11,8 +11,8 @@
 ## Meu processo de criação
 Este foi um desafio do curso Dev em dobro sem resolução <br>
 <br>
-Foi fantástico o jeito como fiz a parte do CSS, percebi que consegui resolver os problemas muito mais rápido do que antes. foi ótimo pra minha percepção de progresso.
-No começo, eu pensei bem em como ia estruturar o meu HTML para encaixar com o CSS e o JS., eu estou tentando pensar agora diferente com o uso do JS, esse foi um bom treino pra isso,
+Foi fantástico o jeito como fiz a parte do CSS, percebi que consegui resolver os problemas muito mais rápido do que antes, foi ótimo para minha percepção de progresso.
+No começo, eu pensei bem em como ia estruturar o meu HTML para encaixar com o CSS e o JS, eu estou tentando pensar agora diferente com o uso do JS, esse foi um bom treino pra isso,
 eles também disseram para fazer a validação inteira pelo JS. Então eu realmente fiz toda a mudança somente pelo JS., mas imagino que na próxima eu vá colocar as classes no CSS e apenas adicioná-las no JS.
 
 ### O que aprendi
